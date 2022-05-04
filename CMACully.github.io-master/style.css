@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+    /* Online Profile
+    Author: Chauntel Atchley Cully
+    Date: 03/07/2021 - 03/__/2021 */
+:root
+{
+  --dark-blue: #396084;
+  --grey-blue: #BED2E8;
+  --light-blue: #EBF5FF;
+  --white-blue: #FDFDFD;
+  --light: #F1F1F1;
+  --shadow: 0 1px 5px rgba(87, 87, 87, 0.8);
+}
+
+.container-fluid
+{
+  margin: 0;
+  padding: 0;
+}
+
+.container
+{
+  max-width: 1600px;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  background-color: var(--light-blue);
+}
+
+a
+{
+  color: var(--light);
+  text-decoration: none;
+}
+
+/* Navigation */
+
+.nav
+{
+  padding-top: 2rem;
+  background-color: transparent;
+  font-size: 1.7rem;
+}
+
+.nav-link1
+{
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-link1:hover
+{
+  text-decoration: none;
+  color: var(--light);
+}
+
+.nav-item.active, .nav-link.active
+{
+  background-color: #8FE3E5;
+  color: var(--grey-dark);
+  border: none;
+}
+
+.nav-link:hover
+{
+  border: none;
+  color: black;
+}
+
+.nav-item
+{
+  margin: auto 25px auto 25px;
+  background-color: rgba(143, 227, 229, 0.5);
+  transition: none;
+}
+
+/* End Navigation */
+
+/* Footer */
+
+footer
+{
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--grey-blue);
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  margin: 5rem 0 0 0;
+}
+
+.footer-nav
+{
+  margin: 0 15rem 0 15rem;
+  padding-bottom: 5rem;
+}
+
+.nav-link2:hover
+{
+  color: var(--grey-blue);
+}
+
+.nav-item2
+{
+  margin: auto 5rem auto 5rem;
+  transition: none;
+}
+
+.ftr
+{
+  color: #A2A2A2;
+}
+
+/* End Footer */
+
+/* Header below Navigation */
+
+header
+{
+  color: var(--light);
+  background-color: transparent;
+  padding: 15rem 0 15rem 20rem;
+  margin-bottom: 8rem;
+}
+
+h1
+{
+  font-size: 6rem;
+  padding-bottom: 5rem;
+}
+
+.cntrh
+{
+  background-image: url("images/header.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* End Header */
+
+/* ----------------------------------- Start About Page ----------------------------------- */
+
+/* Row - About Me Section */
+
+.row.align-items-start
+{
+  padding: 0 10rem 0 10rem;
+}
+
+.about
+{
+  font-size: 2.5rem;
+}
+
+
+/* End - About Me */
+
+/* Passion Section */
+
+.flow
+{
+  background-color: var(--white-blue);
+  padding: 10rem 20rem 10rem 20rem;
+  margin: 0;
+}
+
+/* End Passion */
+
+/* Slideshow Section */
+
+.carousel.slide
+{
+  background-color: var(--light-blue);
+  max-width: 700px;
+  vertical-align: middle;
+  margin: 5rem auto 0 auto;
+}
+
+h6
+{
+  text-align: center;
+  font-size: 15px;
+  color: var(--dark-blue);
+}
+
+/* End Slideshow */
+/* ----------------------------------- End About Page ----------------------------------- */
+
+/* ----------------------------------- Start Portfolio Page ----------------------------------- */
+
+.prtflo
+{
+  text-align: center;
+}
+
+.card
+{
+  padding-top: 15px;
+  margin-bottom: 1rem;
+  height: 30rem;
+  box-shadow: var(--shadow);
+}
+
+.card:hover
+{
+  background-color: rgba(143, 227, 229, 0.3);
+}
+
+.card-title, .card-text
+{
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.zoom
+{
+  transition: transform .3s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.zoom:hover
+{
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2);
+}
+
+/* ----------------------------------- Start Resume Page ----------------------------------- */
+
+/* Work Related Html Links */
+.workexp
+{
+  color: var(--dark-blue);
+}
+
+.linebr
+{
+  border-top: 7px outset #8FE3E5;
+}
+
+/* ----------------------------------- End Resume Page ----------------------------------- */
+
+/* ----------------------------------- Breapoints ----------------------------------- */
+
+@media (max-width: 1199.98px)
+{
+  .container
+  {
+    max-width: 1000px;
+  }
+
+  header
+  {
+    margin: auto auto 10rem auto;
+    padding: 15rem 10rem 15rem 10rem;
+    width: auto;
+  }
+
+  .footer-nav
+  {
+    margin: 0 1rem 0 1rem;
+    padding-bottom: 5rem;
+  }
+
+  .row.align-items-start
+  {
+    padding: 0;
+  }
+
+  .card
+  {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 767.98px)
+{
+  .container
+  {
+    max-width: 760px;
+  }
+
+  .nav-link1
+  {
+    margin: 1rem 5rem 1rem 5rem;
+    padding: 0 3rem 0 3rem;
+  }
+
+  .nav-item
+  {
+    margin: 1rem 6rem 1rem 6rem;
+    padding: 0 3rem 0 3rem;
+  }
+
+  header
+  {
+    margin-bottom: 5rem;
+    padding: 5rem 0 5rem 2rem;
+    width: auto;
+  }
+
+  .footer-nav
+  {
+    margin: 0 10rem 0 10rem;
+    padding-bottom: 5rem;
+  }
+
+  .row.align-items-start
+  {
+    text-align: center;
+  }
+
+  .flow
+  {
+    margin: 0;
+    padding: 5rem 8rem 5rem 8rem;
+    width: auto;
+  }
+
+  .card
+  {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .zoom:hover
+  {
+    -ms-transform: scale(3); /* IE 9 */
+    -webkit-transform: scale(3); /* Safari 3-8 */
+    transform: scale(3);
+  }
+}
+
+@media (max-width: 575.98px)
+{
+  .container
+  {
+    max-width: 570px;
+  }
+
+  .card
+  {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .flow
+  {
+    margin: 0;
+    padding: 5rem 3rem 5rem 3rem;
+    width: auto;
+  }
+
+  .row.align-items-start
+  {
+    text-align: center;
+  }
+
+  .zoom:hover
+  {
+    -ms-transform: scale(4); /* IE 9 */
+    -webkit-transform: scale(4); /* Safari 3-8 */
+    transform: scale(4);
+  }
+}
+
+/* ----------------------------------- End Breapoints ----------------------------------- */
